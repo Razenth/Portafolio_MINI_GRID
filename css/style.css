@@ -1,0 +1,644 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&family=REM&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&family=REM&family=Source+Code+Pro:ital@1&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'REM', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+}
+
+:root{
+    --amarilloPillo:rgb(255, 219, 14) ;
+}
+
+.containerPrincipal{
+    /*  EN ESTA LINEA REALICÉ EL DISPLAY GRID, PARA PODER DIVIR LAS 3 COLUMNAS QUE TIENE LA PÁGINA, DE RESTO, TODO 
+        CONTENIDO TIENE DISPLAY FLEX, AL IGUAL, MODIFIQUÉ UN POCO MÁS LAS MEDIA QUERIES PARA QUE LOGRASE ADAPTARSE
+        BIEN EN LOS DISTINTOS DISPOSITIVOS*/
+    display: grid;
+    grid-template-columns: 33.3%  33.3% 33.3%;
+    height: 100vh;
+    width: 100%;
+    gap: 3px;
+    background-color: white;
+}
+
+/* Left Side */
+
+.leftSide{
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+}
+
+.fotomia{
+    border: 1px solid white;
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    background-image: url(../images/miaFoto.jpeg); 
+    background-position: center;
+    background-size: cover; 
+}
+
+.imgContainer{
+    margin-bottom: 20px;
+}
+
+.infoDiv{
+    border-bottom: 1px solid white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.infoP{
+    color: var(--amarilloPillo)
+}
+
+.infoLabel{
+    color: white;
+}
+
+.profesionalProfile{
+    align-self: flex-start;
+    margin-top: 20px;
+    color: white;
+    width: 590px;
+    padding: 20px;
+}
+
+.perfilProTitle{
+    border-bottom: 1px solid white;
+    margin-bottom: 20px;
+    color: var(--amarilloPillo);
+    width: 401px;
+}
+.perfilInfoContainer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.perfilParrafo{
+    font-size: 15px;
+    width: 40%;
+    align-self: center;
+    text-align: left;
+}
+
+.narutoImg{
+    width: 55%;
+    height: 85%;
+    align-self: center;
+}
+
+
+/* MIDDLE */
+
+.middle{
+    grid-column: 2;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    
+}
+
+.skillsTitle{
+    border-bottom: 1px solid white;
+    width: 405px;
+    color: var(--amarilloPillo)
+}
+
+.skillsP{
+    color: var(--amarilloPillo);
+    font-size: 18px;
+    margin: 5px 0 5px 0;
+}
+
+.fa-brands, .fa-solid{
+    color: var(--amarilloPillo);
+}
+
+.lenguaje_container{
+    border: 1px solid var(--amarilloPillo);
+    border-radius: 5px 15px 5px 15px;
+    margin: 20px 0 20px 0;
+    width: 400px;
+    padding: 10px;
+}
+
+progress[value]{
+    appearance: none;
+    -webkit-appearance: none;
+}
+progress[value]::-webkit-progress-bar{
+    border-radius: 10px;
+    background-color: white;
+
+}
+progress[value]::-webkit-progress-value{
+    border-radius: 10px;
+    background-color: gray;
+}
+
+
+/* RIGHT SIDE */
+
+.rightSide{
+    grid-column: 3;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+    /* LENGUAGES RIGHT */
+
+.lenguages_title{
+    border-bottom: 1px solid white;
+    width: 195px;
+    color: var(--amarilloPillo);
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+.conteiner_english{
+    display: flex;
+    margin: 10px 0 10px 0;
+    justify-content:space-around;
+    align-items: center;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.puntitos{
+    border: 1px solid white;
+    border:dashed;
+    width: 30%;
+}
+
+.balls_container{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.balls{
+    height: 20px;
+    width: 20px;
+    background-color: var(--amarilloPillo);
+    border-radius: 50%;
+}
+
+.ball_none{
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+
+.conteiner_spanish{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.lenguage_left{
+    border-bottom: 1px solid var(--amarilloPillo);
+    padding: 5px;
+}
+
+.lenguage_right{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: flex-end;
+    height: 80px;
+}
+
+    /* SCHOOL RIGHT */
+
+.school-title{
+    border-bottom: 1px solid white;
+    width: 35%;
+    font-size: 30px;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: var(--amarilloPillo);
+}
+
+.school-conteiners{ 
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tarjeta{
+    display: flex;
+    justify-content: center;
+    margin: 15px 0 15px 0;
+    padding: 5px;
+    width: 450px;
+}
+
+.tarjeta > span{
+    width: 150px;
+    color: var(--amarilloPillo);
+    font-size: 22px;
+    align-self: center;
+}
+
+.mini-tarjeta{
+    display: flex;
+    flex-direction: column;
+    width:300px;
+    font-size: 17px;
+    align-items: center;
+    justify-content: center;
+}
+
+.mini-tarjeta :last-child{
+    color: gray;
+}
+
+hr{
+    width: 500px;
+}
+
+
+/*  WORK EXPERIENCE */
+
+.work-title{
+    color: var(--amarilloPillo);
+    width: 263px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-bottom: 1px solid white;
+    font-size: 30px;
+}
+
+.work-container{
+    display: flex;
+    justify-content: center;
+}
+
+/*  FOOTER  */
+
+footer{
+    text-align: center;
+    color: var(--amarilloPillo);
+}
+
+
+/*  MEDIA QUERRY  */
+
+@media (max-width:1536px) {
+
+    .fotomia{
+        width: 150px;
+        height: 150px;
+    }
+
+    .imgContainer{
+        margin-bottom: 10px;
+    }
+
+    .infoDiv{
+        font-size: 16px;
+        width: 90%;
+    }
+
+    .profesionalProfile{
+        margin-top: 10px;
+    }
+
+    .perfilProTitle{
+        font-size: 24px;
+        width: 301px;
+    }
+
+    .skillsTitle{
+        width: 310px;
+    }
+
+    .perfilInfoContainer{
+        width: 450px;
+    }
+
+    .perfilParrafo{
+        font-size: 13px;
+        width: 43%;
+    }
+
+    .narutoImg{
+        width: auto;
+    }
+
+    .skillsTitle{
+        font-size: 24px;
+    }
+
+    .lenguaje_container{
+        width: auto;
+    }
+
+    .skillsP{
+        font-size: 15px;
+    }
+
+    .lenguages_title{
+        font-size: 23px;
+    }
+
+    .lenguaje_h1{
+        font-size: 20px;
+    }
+
+    .conteiner_english, .conteiner_spanish{
+        font-size: 17px;
+        padding: 5px;
+    }
+
+    .balls, .ball_none{
+        height: 15px;
+        width: 15px;
+    }
+
+    .puntitos{
+        width: 20%  ;
+    }
+
+    .lenguage_right{
+        height: 70px;
+    }
+
+    .school-title{
+        font-size: 22px;
+    }
+
+    .tarjeta{
+        border: 1px solid wheat;
+        width: auto;
+    }
+
+    .tarjeta > span{
+        font-size: 15px;
+    }
+
+    .mini-tarjeta{
+        font-size: 14px;
+        width: auto;
+    }
+
+    hr{
+        width: 100%;
+    }
+
+    .work-title{
+        font-size: 22px;
+    }
+
+    footer{
+        font-size: 15px;
+    }
+}
+
+@media (max-width:1400px) {
+    .profesionalProfile{
+        border: 1px solid red;
+        width: auto;
+    }
+
+    .perfilInfoContainer{
+        flex-direction: column;
+        width: auto;
+        border: 1px solid green;
+    }
+
+
+    .perfilParrafo{
+        width: 100%;
+    }
+}
+
+@media (max-width:1030px) {
+
+        .fotomia{
+            width: 100px;
+            height: 100px;
+        }
+    
+        .imgContainer{
+            margin-bottom: 5px;
+        }
+    
+        .infoDiv{
+            font-size: 12px;
+            width: 90%;
+        }
+    
+        .profesionalProfile{
+            margin-top: 15px;
+            padding: 5px;
+        }
+    
+        .perfilProTitle{
+            font-size: 21px;
+            width: 270px;
+        }
+    
+        .skillsTitle{
+            width: 310px;
+        }
+    
+        .perfilInfoContainer{
+            width: 310px;
+            gap: 0;
+            flex-direction: column;
+        }
+    
+        .perfilParrafo{
+            font-size: 12px;
+            width: 300px;
+        }
+    
+        .narutoImg{
+            width: 55%;
+        }
+    
+    
+        .skillsTitle{
+            font-size: 19px;
+        }
+
+        .middle{
+            border: 1px solid red;
+        }
+
+        .middleSkills{
+            border: 1px solid red;
+            width: 100%;
+        }
+
+        .skills{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid greenyellow;
+            justify-content: center;
+        }
+    
+        .skillsP{
+            font-size: 13px;
+        }
+    
+        .lenguages_title{
+            font-size: 19px;
+        }
+
+        .lenguaje_container{
+            width: auto;
+        }
+    
+        .lenguaje_h1{
+            font-size: 15px;
+        }
+
+        .skillsLabel{
+            font-size: 13px;
+        }
+        progress[value]::-webkit-progress-bar{
+            height: 10px;
+        
+        }
+
+        .lenguaje_container label{
+            font-size: 13px;
+        }
+    
+        .conteiner_english, .conteiner_spanish{
+            font-size: 15px;
+            padding: 5px;
+        }
+    
+        .balls, .ball_none{
+            height: 10px;
+            width: 10px;
+        }
+    
+        .puntitos{
+            width: 20%  ;
+        }
+    
+        .lenguage_right{
+            height: 60px;
+        }
+    
+        .school-title{
+            font-size: 18px;
+            width: 120px;
+        }
+
+        .tarjeta{
+            width: 300px;
+        }
+    
+        .tarjeta > span{
+            font-size: 13px;
+        }
+    
+        .mini-tarjeta{
+            font-size: 10px;
+        }
+    
+        hr{
+            width: 280px;
+        }
+    
+        .work-title{
+            font-size: 19px;
+        }
+    
+        footer{
+            font-size: 10px;
+        }
+    }
+
+    @media (max-width:780px) {
+        .containerPrincipal{
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        
+        .leftSide, .middle,.rightSide{
+            width: 100%;
+        }
+
+        .fotomia{
+            height: 150px;
+            width: 150px;
+        }
+        .imgContainer{
+            margin-bottom: 20px;
+        }
+
+        .infoDiv{
+            align-items: center;
+            font-size: 14px;
+            width: 100%;
+        }
+
+        .profesionalProfile{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .perfilProTitle{
+            font-size: 23px;
+            text-align: center;
+            width: 40%;
+        }
+
+        .perfilInfoContainer{
+            align-items: center;
+            width: auto;
+        }
+
+        .perfilParrafo{
+            width: 300px;
+            padding-left: 10px;
+        }
+
+        .skillsTitle{
+            width: 245px;
+        }
+
+        .skills{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
