@@ -395,7 +395,6 @@ footer{
     }
 
     .tarjeta{
-        border: 1px solid wheat;
         width: auto;
     }
 
@@ -423,14 +422,12 @@ footer{
 
 @media (max-width:1400px) {
     .profesionalProfile{
-        border: 1px solid red;
         width: auto;
     }
 
     .perfilInfoContainer{
         flex-direction: column;
         width: auto;
-        border: 1px solid green;
     }
 
 
@@ -489,12 +486,10 @@ footer{
             font-size: 19px;
         }
 
-        .middle{
-            border: 1px solid red;
-        }
+
 
         .middleSkills{
-            border: 1px solid red;
+
             width: 100%;
         }
 
@@ -502,7 +497,6 @@ footer{
             display: flex;
             flex-direction: column;
             align-items: center;
-            border: 1px solid greenyellow;
             justify-content: center;
         }
     
